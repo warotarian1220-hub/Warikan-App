@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#FF6347">
+    <link rel="stylesheet" href="style.css">
+    <title>割り勘GOD</title>
+</head>
+<body>
+    <div class="card">
+        <h2>割り勘するぞ！！</h2>
+
+        <label>合計金額(円)</label>
+        <input type="number" id="total" placeholder="例: 15000">
+
+        <label>人数</label>
+        <input type="number" id="numPeople" placeholder="例: 4">
+
+        <label>
+        <input type="checkbox" id="hasDriver">
+        運転手がいる
+        </label>
+            
+        <button onclick="calculate()">計算する！</button>
+        <div id="result"></div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
